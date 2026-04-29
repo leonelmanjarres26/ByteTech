@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/icon.png">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>ByteTech</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ByteTech | Servicios</title>
 </head>
 <body>
     <header>
-        <h1>ByteTech</h1>
-        <p>Tecnologia a tu alcance</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/icon.png" alt="ByteTech icon" class="logo">
+                <div>
+                    <h1>ByteTech</h1>
+                    <p>Tecnologia a tu alcance</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Nuestros Servicios</h2>
-        <div class ="services">
-            <article>
-                <h2>venta de Equipos</h2>
-                <ul>
-                    <li>Computadores</li>
-                    <li>Portartiles</li>
-                    <li>Celulares</li>
-                    <li>Accesorios</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Venta de Repuestos</h2>
-                <ul>
-                    <li>Memoria RAM</li>
-                    <li>Discos SSD y M2</li>
-                    <li>Baterias</li>
-                    <li>Cargadores</li>         
-                </ul>
-            </article>
-            
-            <article>
-                <h2>Servicio Técnico</h2>
-                <ul>
-                    <li>Formateo de computadores</li>
-                    <li>Limpieza interna</li>
-                    <li>Eliminación de virus</li>
-                    <li>Reparación de hardware</li>
-                </ul>
-            </article>
+    <main class="container">
+        <section class="page-section">
+            <h2>Nuestros servicios</h2>
+            <p>En ByteTech ofrecemos una amplia gama de soluciones tecnologicas para clientes y empresas que buscan calidad y soporte experto.</p>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h2>Venta de equipos</h2>
+                    <ul>
+                        <li>Computadores</li>
+                        <li>Portatiles</li>
+                        <li>Celulares</li>
+                        <li>Accesorios</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h2>Venta de repuestos</h2>
+                    <ul>
+                        <li>Memoria RAM</li>
+                        <li>Discos SSD y M.2</li>
+                        <li>Baterias</li>
+                        <li>Cargadores</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h2>Servicio tecnico</h2>
+                    <ul>
+                        <li>Formateo de computadores</li>
+                        <li>Limpieza interna</li>
+                        <li>Eliminacion de virus</li>
+                        <li>Reparacion de hardware</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ByteTech. Todos los derechos reservados.</p>
         </div>
-    </section>
-
-
-
-        <footer>
-        <p>&copy; 2026 ByteTech. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

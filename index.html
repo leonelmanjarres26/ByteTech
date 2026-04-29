@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/icon.png">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>ByteTech</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ByteTech | Inicio</title>
 </head>
 <body>
     <header>
-        <h1>ByteTech</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/icon.png" alt="ByteTech icon" class="logo">
+                <div>
+                    <h1>ByteTech</h1>
+                    <p>Soluciones tecnologicas confiables</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="home">
-        <h2>Inicio</h2>
-        <p>Bienvenido a ByteTech, tu socio tecnológico de confianza.</p>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenido a ByteTech</h2>
+            <p>Tu socio local en computadores, repuestos, accesorios y dispositivos moviles. Ofrecemos productos modernos, asesoria personalizada y servicio tecnico confiable.</p>
+            <a class="btn" href="services.html">Conoce nuestros servicios</a>
+        </section>
+
+        <section class="features">
+            <article class="card">
+                <h2>Variedad de productos</h2>
+                <p>Equipos, accesorios y repuestos para clientes y empresas con la mejor relacion calidad-precio.</p>
+            </article>
+            <article class="card">
+                <h2>Soporte experto</h2>
+                <p>Asesoria personalizada para elegir la solucion ideal segun tu presupuesto y necesidades.</p>
+            </article>
+            <article class="card">
+                <h2>Atencion local</h2>
+                <p>Servicio cercano y efectivo en Valledupar para compras, soporte y garantias.</p>
+            </article>
+        </section>
+    </main>
+
     <footer>
-      <p>&copy; 2026 ByteTech. Todos los derechos reservados.</p>
-    </footer>    
+        <div class="container">
+            <p>&copy; 2026 ByteTech. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
