@@ -37,6 +37,15 @@
     border: 1px solid var(--color-borde);
     box-shadow: 0 24px 60px rgba(0,0,0,0.18);
     transition: transform 0.25s ease, border-color 0.25s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.animate-in,
+.service-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card:hover,
@@ -73,6 +82,14 @@
 
 .page-section {
     padding: 60px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.page-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .page-section h2 {
@@ -94,7 +111,54 @@
     margin-top: 30px;
 }
 
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--color-texto);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+nav ul.mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+nav ul.mobile.active {
+    display: flex;
+}
+
+nav ul.mobile li {
+    margin: 10px 0;
+}
+
 @media (max-width: 760px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
     .hero {
         padding: 60px 0 30px;
     }
