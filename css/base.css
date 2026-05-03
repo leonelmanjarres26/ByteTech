@@ -31,10 +31,17 @@ main {
     flex: 1;
 }
 
-img {
-    max-width: 100%;
+.contendor-img {
+    width: 100%;
+}
+
+.contendor-img img {
+    width: 100%;
+    height: auto;
     display: block;
 }
+
+
 
 a {
     color: inherit;
